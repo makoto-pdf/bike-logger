@@ -33,10 +33,17 @@ h2 {
     align-items: center;
 }
 
+.card h3 {
+    margin: 0 0 10px 0;
+    height: 24px;
+    line-height: 24px;
+}
+
 .value {
     font-size: 30px;
     font-weight: bold;
     line-height: 1.2;
+    height: 36px;
 }
 
 #map {
