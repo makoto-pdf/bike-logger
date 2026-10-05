@@ -1,0 +1,73 @@
+<!--
+R25E1001
+小田 正琴
+サイコン
+-->
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bike Logger</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+
+<body>
+
+    <h1>🚴 My Bike Logger🚴</h1>
+
+    <p>自転車の走行データを記録・表示します。</p>
+
+    <h2>走行データ</h2>
+
+    <div class="dashboard">
+
+        <div class="card">
+            <h3>速度</h3>
+            <div class="value">-- km/h</div>
+        </div>
+
+        <div class="card">
+            <h3>距離</h3>
+            <div class="value">-- km</div>
+        </div>
+
+        <div class="card">
+            <h3>獲得標高</h3>
+            <div class="value" id="elevationGain">-- m</div>
+        </div>
+
+    </div>
+
+    <h2>走行ルート</h2>
+
+    <div id="map"></div>
+
+<h2>速度グラフ</h2>
+
+<div class="chart-container">
+    <canvas id="speedChart"></canvas>
+</div>
+
+<h2>標高</h2>
+
+<div class="chart-container">
+    <canvas id="elevationChart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
