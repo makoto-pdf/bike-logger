@@ -56,7 +56,7 @@ new Chart(ctx, {
 
         datasets: [{
             label: '速度 (km/h)',
-            data: [0, 18, 25, 0, 30, 27],
+            data: [0, 18, 25, 2, 30, 27],
             borderWidth: 3,
             tension: 0.3
         }]
